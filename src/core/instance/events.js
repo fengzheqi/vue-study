@@ -17,6 +17,15 @@ export function initEvents (vm: Component) {
   }
 }
 
+/**
+ * tommy注释
+ * 实例方法 / 事件
+ * vm.$on 监听当前实例上的自定义事件。
+ * vm.$once 监听一个自定义事件，但是只触发一次，在第一次触发之后移除监听器。
+ * vm.$off 移除自定义事件监听器。
+ * vm.$emit 触发当前实例上的事件。
+ * @param {*} Vue 
+ */
 export function eventsMixin (Vue: Class<Component>) {
   Vue.prototype.$on = function (event: string, fn: Function): Component {
     const vm: Component = this
